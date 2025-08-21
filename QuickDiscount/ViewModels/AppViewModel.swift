@@ -64,15 +64,15 @@ class AppViewModel: ObservableObject {
     }
     
     func openTermsAndConditions() {
-        openURL("https://google.com")
+        openURL("https://sites.google.com/adforcegroup.com/id6751346756")
     }
     
     func openPrivacyPolicy() {
-        openURL("https://google.com")
+        openURL("https://sites.google.com/adforcegroup.com/id-6751346756")
     }
     
     func contactSupport() {
-        openURL("https://google.com")
+        openURL("https://forms.gle/7SYSe7SP3bzsvsWM8")
     }
     
     private func openURL(_ urlString: String) {
