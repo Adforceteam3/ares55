@@ -24,6 +24,14 @@ struct MainAppView: View {
                     ))
             }
         }
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("Done") {
+                    hideKeyboard()
+                }
+            }
+        }
         .onAppear {
             FontManager.registerFonts()
             appViewModel.onAppear()

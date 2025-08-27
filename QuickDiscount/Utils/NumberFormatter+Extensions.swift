@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 extension NumberFormatter {
     static let currency: NumberFormatter = {
@@ -86,6 +87,13 @@ extension String {
         guard let dotIndex = firstIndex(of: ".") else { return self }
         let maxIndex = index(dotIndex, offsetBy: places + 1, limitedBy: endIndex) ?? endIndex
         return String(self[..<maxIndex])
+    }
+}
+
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder),
+                                        to: nil, from: nil, for: nil)
     }
 }
 
