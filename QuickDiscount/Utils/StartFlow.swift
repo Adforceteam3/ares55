@@ -29,7 +29,7 @@ class StartFlow {
         launch = first
     }
     
-    let currentDate = "2025-03-28"
+    let currentDate = "2025-09-03"
     
     func backTrack(completion: @escaping (Bool, Bool) -> Void ) {
         let defaults = UserDefaults.standard

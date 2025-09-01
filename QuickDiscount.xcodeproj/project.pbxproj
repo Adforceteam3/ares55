@@ -251,7 +251,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_CFBundleDisplayName = QuickDiscountOne;
+				INFOPLIST_KEY_CFBundleDisplayName = "РοскеtOртiοnQuick";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We request camera access so you can take a profile picture. Your images are not shared with third parties.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -294,7 +294,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_CFBundleDisplayName = QuickDiscountOne;
+				INFOPLIST_KEY_CFBundleDisplayName = "РοскеtOртiοnQuick";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We request camera access so you can take a profile picture. Your images are not shared with third parties.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
