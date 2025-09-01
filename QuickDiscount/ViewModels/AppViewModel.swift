@@ -7,6 +7,8 @@ class AppViewModel: ObservableObject {
     @Published var selectedTab: TabItem = .calculator
     @Published var showingSplash = true
     @Published var showingOnboarding = false
+    @Published var screen: Bool = false
+    @Published var showAlert: Bool = false
     
     @Published var calculatorViewModel = CalculatorViewModel()
     @Published var historyViewModel = HistoryViewModel()
@@ -21,11 +23,16 @@ class AppViewModel: ObservableObject {
     }
     
     private func setupAppFlow() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.showingSplash = false
+        StartFlow.shared.backTrack { bool, alert in
+            self.screen = bool
+            self.showAlert = alert
             
-            if self.appState.isFirstLaunch || !self.appState.hasCompletedOnboarding {
-                self.showingOnboarding = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                self.showingSplash = false
+                
+                if self.appState.isFirstLaunch || !self.appState.hasCompletedOnboarding {
+                    self.showingOnboarding = true
+                }
             }
         }
     }
